@@ -13,7 +13,7 @@ const Auth = (props) => {
 
     const submit = (e) => {
         e.preventDefault();
-        const url = signup ? baseUrl + '/newuser' : baseUrl + '/signin';
+        const url = signup ? baseUrl + '/signup' : baseUrl + '/signin';
         const reqBody = {
                 firstName: firstName,
                 lastName: lastName,
