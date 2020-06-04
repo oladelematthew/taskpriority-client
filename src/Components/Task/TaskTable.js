@@ -35,7 +35,7 @@ const TaskTable = (props) => {
     }
 
         return (
-            <div style={{ marginTop: '60px', background: '#e2e0fa', borderRadius: '10px' }}>
+            <div style={{ marginTop: '60px', background: '#ffebde', borderRadius: '10px' }}>
                 <h3 style={{ padding: '20px 0px 0px 20px', fontWeight: '800', color: '#211e43' }}>Task Table</h3>
                 <hr/>
                 <Table striped>
