@@ -20,7 +20,7 @@ const TaskTable = (props) => {
             <tr key={index}>
                 <th scope="row">{ task.id }</th>
                 <td>{ task.taskName }</td>
-                <td>{ task.dueDate.toString() }</td> 
+                <td>{ task.dueDate.toString().substring(0, 10) }</td> 
                 {/* toLocaleDateString() */}
                 <td>{ task.timeOfTask }</td>
                 <td>{ task.priority }</td>
@@ -44,7 +44,7 @@ const TaskTable = (props) => {
                             <th>id</th>
                             <th>Task Name</th>
                             <th>Due Date</th>
-                            <th>Time of Task</th>
+                            <th>Time of Task (mins)</th>
                             <th>Priority</th>
                             <th>Task Completed</th>
                         </tr>
