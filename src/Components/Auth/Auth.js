@@ -67,7 +67,7 @@ const Auth = (props) => {
 
                         <FormGroup style={{ marginTop: '-5px' }} >
                             <Label htmlFor="password">Password</Label>
-                            <Input style={{ marginTop: '-10px' }} name="password" value={password} onChange={e => setPassword(e.target.value)} required />
+                            <Input style={{ marginTop: '-10px' }} type="password" name="password" value={password} onChange={e => setPassword(e.target.value)} required />
                         </FormGroup>
 
                         <Button style={{ backgroundColor: '#9b0897', borderColor: 'white' }} type="button" onClick={() => setSignup(!signup)}>{signup ? 'Have an account? Signin' : 'Need an account? Signup!'}</Button>
