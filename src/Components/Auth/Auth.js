@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import APIURL from '../../Helpers/environment';
+import linkedin from '../../Assets/matthew-oladele-linkedin.png';
+import github from '../../Assets/matthew-oladele-github.png';
 
 const baseUrl = `${APIURL}/user`;
 
@@ -73,6 +75,20 @@ const Auth = (props) => {
                         <Button style={{ backgroundColor: '#9b0897', borderColor: 'white' }} type="button" onClick={() => setSignup(!signup)}>{signup ? 'Have an account? Signin' : 'Need an account? Signup!'}</Button>
                         <Button style={{ backgroundColor: '#211e43', borderColor: 'white' }} type="submit">Click to Submit</Button>
                     </Form>
+
+                    <footer style={{width: "30vw" }}>
+                        <br />
+                        <hr />
+                        <div style={{ display: "flex", }}>
+                            <p style={{ fontWeight: '300', fontSize: '0.8rem', color: 'grey', marginRight: "10px" }}>© 2020 taskPriority | All Rights Reserved.</p>
+                            <a href="https://www.linkedin.com/in/matthew-oladele-20" target="blank" >
+                                <img src={linkedin} style={{height: '20px', cursor: 'pointer', marginRight: "10px"}} />
+                            </a>
+                            <a href="https://github.com/oladelematthew" target="blank" >
+                            <img src={github} style={{height: '20px', cursor: 'pointer'}} />
+                            </a>
+                        </div>
+                    </footer>
 
                 </div>
                 

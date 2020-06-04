@@ -35,9 +35,7 @@ function App() {
       </BrowserRouter>
       { signedIn ? <TaskIndex token={token} /> : <Auth updateToken={updateToken}/>}
       {/* <TaskIndex /> */}
-      {/* <footer style={{ height: '10px', width: '100%', backgroundColor: 'red' }}>
-        <p style={{ fontWeight: '600', fontSize: '1.2rem', color: 'white' }}>© Matthew Oladele 2020</p>
-      </footer> */}
+      
     </div>
   );
 }

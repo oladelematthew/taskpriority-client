@@ -44,7 +44,7 @@ const TaskIndex = (props) => {
     }, [])
 
     return (
-            <Container>
+            <Container >
                 <Row>
                     <Col md="3">
                         <TaskCreate fetchTasks={ fetchTasks } token={ props.token } />
