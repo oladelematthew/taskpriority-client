@@ -43,7 +43,7 @@ const TaskEdit = (props) => {
 
                             <FormGroup>
                                 <Label htmlFor="dueDate">Edit Due Date</Label>
-                                <Input date="dueDate" value={editDate} onChange={(e) => setEditDate(e.target.value)}/>
+                                <Input date="dueDate" type="date" value={editDate} onChange={(e) => setEditDate(e.target.value)}/>
                             </FormGroup>
 
                             <FormGroup>
